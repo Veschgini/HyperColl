@@ -57,11 +57,9 @@ p13 = list(set([FR,NO,FI,IT,ES,EL,HR,HU,SE,BE,LV,CZ,FR,UK,ES,PL,NL,DE,PL,FR,BE,U
 p14 = [HR,FR,ES,UK,IE,SI,LT,FI]
 p15 = [SK,BG,NL,EL,HR,RS]
 
-# projects = [p10,p13,p15,p11]
 projects = [p10,p11,p13,p15]
 import collections
 countires = collections.deque(set([c for p in projects for c in p]))
-# countires.rotate(2)
 countires =list(sorted(countires))
 print(countires)
 
@@ -75,7 +73,6 @@ oldcolor2 = [10./255,26./255,70./255]
 color = oldcolor2
 hc.hypercoll(projects,250,0.0,.6,
 	background_color=color,font_size=9,hspace=5,
-	# edge_order=[6,5,4,3,2,1,0],
 	fill=True,background_disk=True,background_circle=False,labels=True,font_face = "Open Sans")
 
 EU = "EU"
