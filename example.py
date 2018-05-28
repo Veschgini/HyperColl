@@ -61,9 +61,7 @@ projects = [p10,p11,p13,p15]
 import collections
 countires = collections.deque(set([c for p in projects for c in p]))
 countires =list(sorted(countires))
-print(countires)
 
-print(len(countires))
 hc = hypercoll.HyperColl(countires)
 
 color1 = [57./255,91./255,142./255]
